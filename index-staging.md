@@ -3,62 +3,70 @@ title: Data Transfer Project
 tagline:  a platform for transfering data
 description: Data Transfer Project is a collaboration of organizations committed to building a common framework with open-source code that can connect any two online service providers, enabling a seamless, direct transfer of data between the two platforms.
 ---
-## **Who We Are**
-Data Transfer Project (DTP) is a collaboration of organizations committed to building a common framework with open-source code that can connect any two online service providers, enabling a seamless, direct transfer of data between the two platforms.
 
-We want all individuals across the web to be in control of their data.
-
-## **How It Works**
-
-Data Transfer Project envisions an ecosystem of adapters that convert proprietary data formats into a small number of canonical formats (Data Models) useful for transferring data. This allows data transfer between any two service providers using the service provider's existing authorization mechanism, and allows each service provider to maintain control over the security of their service. 
-
-<img src="./HowItWorks.png" width="548">
-
-An individual who wants to move their photos data from Serivce Provider C, for example, to Service Provider E, doesn’t have to worry about data format types since both Service Provider C and Service Provider E are part of the Data Transfer Project.  Data Transfer Project APIs handle the format conversions on both ends, as well as manage the transaction between Service Providers.  Each Service Provider uses their own primary authentication infrastructure to ensure authentication on both sides of the transfer.
-
-### Initial Data Portability Enabled
-The initial set of data format types which can be moved directly between online service providers via Data Transfer Project include:   
-
-+  calendar
-+  contacts
-+  email
-+  photos
-+  posts  
-
-The Data Transfer Project is actively working to extend the supported set of data format types, and we are looking for partners to help us in this area. Additional file types for service-to-service transfer that the DTP intends to support include documents, spreadsheets, videos, sensor data, CAD files and more   
-
-We hope to eventually include all file types across all services.
-
-### Initial Set of Integration  
-Data Transfer Project APIs have been built for the following service providers and file types:
-
-+  Google: Photos, calendar, mail, contacts, tasks
-+  Microsoft: Calendar, contacts
-+  Flickr: Photos
-+  Instagram: Photos
-+  Rememberthemilk: Tasks
-
-## **How To Participate**
-There are many ways to participate in this open source project:
-
-### Become a Provider by Integrating a Service  
-If you just want to enable your service to share files using the Data Transfer Project toolset, check out the [Provider Integration Guide](https://github.com/google/data-transfer-project/blob/master/Documentation/Integration.md) on Github and download the code. 
-
-Providers who incorporates this code into their current platform give individuals the ability to transfer their data to or from their service. For example, with this tool fully implemented, anyone could seamlessly transfer their photos from one photos service provider to another.
-
-### Contribute To The Core Framework  
-If you would like to write an API to a new data type and/or extend the DTP framework see [Developer Guide](https://github.com/google/data-transfer-project/blob/master/Documentation/Developer.md) on the [Data Transfer Project Github site](https://github.com/google/data-transfer-project).
-
-### Hosting Options For a DTP Instance  
-Partners may host an instance of Data Transfer Project configured to their needs on any docker-based platform.  Google Cloud Platform and Microsoft Azure already have pre-built tools for hosting Data Transfer Project. 
-
-### **Contact Us**  
-+  General questions and discussion: dtp-discuss@googlegroups.com
-
-## **About Us**
+## About us
 
 The Data Transfer Project was formed in 2017 to create an open-source, service-to-service portability platform so that all individuals across the web could easily move their data between online service providers.
 
-The partners in the Data Transfer Project believe portability and interoperability are central to innovation. Making it easier for individuals to choose among services facilitates competition, empowers individuals to try new services and enables them to choose the offering that best suits their needs. 
+The contributors in the Data Transfer Project believe portability and interoperability are central to innovation. Making it easier for individuals to choose among services facilitates competition, empowers individuals to try new services and enables them to choose the offering that best suits their needs.
 
-We anticipate the Data Transfer Project solution will make a particularly big impact in global markets where downloading or uploading data is expensive and/or slow. The Data Transfer Project eliminates the need to download data at all. Instead, files are transferred directly between service providers.
+Current contributors include:
+
+
+## What is the Data Transfer Project
+
+Data Transfer Project (DTP) is a collaboration of organizations committed to building a common framework with open-source code that can connect any two online service providers, enabling a seamless, direct transfer of data between the two platforms.
+
+Learn More 
+
+## How does it work
+
+The Data Transfer Project uses services' existing APIs and authorization mechanisms to access data. It then uses service specific adapters to transfer that data into a common format, and then back into the new service’s API.
+
+Learn More
+
+## What are some use cases
+
+There are many use cases for users transferring data between services, some we know about today, and some we have yet to discover. A couple of examples of ones we know users want today are:
+
+    Trying out a new service
+    Leaving a service
+    Backing up your data
+
+Learn More
+
+## Why do we need DTP
+
+Users should be in control of their data on the web, part of this is the ability to move their data. Currently users can download a copy of their data from most services, but that is only half the battle in terms of moving their data. DTP aims make move data between providers significantly easier for users.
+
+Learn More
+
+## Technical Overview
+
+To get a more in-depth understanding of the project, its fundamentals and the details involved, please download “Data Transfer Project Overview and Fundamentals”. You can also use the button at the top of the page.
+
+DOWNLOAD
+
+## How to try it out
+
+DTP is still in development and is not quite ready for everyone to use yet. However if you want to give it a shot we have a couple methods you can try out:
+
+Note: For both of these you need to get your own API keys from the services you want to port data between, please see instructions for getting keys.
+
+    * Via Docker
+    * Via Code
+    * Sites powered by DTP (coming soon)
+
+
+## How to participate
+
+We welcome everyone to participate, the more expertise and viewpoints we have contributing to the project the more successful it will be.
+
+    * If you are a company that wants to add an integrations to allow your users to easy import and export data: Learn More
+    * If you are an individual that wants to contribute technically please see our contributions guide (add link).
+    * If you want to be involved in non-technical aspects of the project you can join the discussion at dtp-discuss or email the maintainers at portability-maintainers@googlegroups.com
+
+
+## Current State
+
+DTP is still in very active development. While we have code that works for a variety of use cases we are continually making improvements that might cause things to break occasionally. So as you are trying things please use it with caution and expect some hiccups. Both our bug list, as well as documentation in each provider’s directory as good places to look for known issues, or report problems you encounter.
