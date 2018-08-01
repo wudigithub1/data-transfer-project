@@ -1,4 +1,4 @@
-# SumgMug
+# SmugMug
 This folder contains the extension implementation for the
 [SumgMug](https://www.smugmug.com/) service.
 
